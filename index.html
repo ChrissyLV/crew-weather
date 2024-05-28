@@ -32,39 +32,71 @@
             <div id="weatherInfo" class="alert alert-info" style="display: none;"></div>
         </div>
     </div>
-                                                         <!-- Settings -->
-        <div class="modal fade" id="settingsModal" tabindex="-1" aria-labelledby="settingsModalLabel" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="settingsModalLabel">Settings</h5>
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                        </button>
+                                                 <!-- Settings -->
+    <div class="modal fade" id="settingsModal" tabindex="-1" aria-labelledby="settingsModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="settingsModalLabel">Settings</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="form-group">
+                        <label for="unitSelect">Temperature Unit</label>
+                        <select class="form-control" id="unitSelect">
+                            <option value="metric">Celsius</option>
+                            <option value="imperial">Fahrenheit</option>
+                        </select>
                     </div>
-                    <div class="modal-body">
-                        <div class="form-group">
-                            <label for="unitSelect">Temperature Unit</label>
-                            <select class="form-control" id="unitSelect">
-                                <option value="metric">Celsius</option>
-                                <option value="imperial">Fahrenheit</option>
-                            </select>
-                        </div>
-                        <div class="form-group">
-                            <label for="windUnitSelect">Wind Speed Unit</label>
-                            <select class="form-control" id="windUnitSelect">
-                                <option value="metric">Meters/Second</option>
-                                <option value="imperial">Miles/Hour</option>
-                            </select>
-                        </div>
+                    <div class="form-group">
+                        <label for="windUnitSelect">Wind Speed Unit</label>
+                        <select class="form-control" id="windUnitSelect">
+                            <option value="metric">Meters/Second</option>
+                            <option value="imperial">Miles/Hour</option>
+                        </select>
                     </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                        <button type="button" class="btn btn-primary" id="saveSettings">Save changes</button>
-                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary" id="saveSettings">Save changes</button>
                 </div>
             </div>
         </div>
+    </div>
+                                      <!-- Language-->
+    <div class="modal fade" id="languageModal" tabindex="-1" aria-labelledby="languageModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="languageModalLabel">Select Language</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="list-group">
+                        <button type="button" class="list-group-item list-group-item-action language-option" data-lang="en">English</button>
+                        <button type="button" class="list-group-item list-group-item-action language-option" data-lang="es">Spanish</button>
+                        <button type="button" class="list-group-item list-group-item-action language-option" data-lang="fr">French</button>
+                        <button type="button" class="list-group-item list-group-item-action language-option" data-lang="de">German</button>
+                        <button type="button" class="list-group-item list-group-item-action language-option" data-lang="it">Italian</button>
+                        <button type="button" class="list-group-item list-group-item-action language-option" data-lang="pt">Portuguese</button>
+                        <button type="button" class="list-group-item list-group-item-action language-option" data-lang="ru">Russian</button>
+                        <button type="button" class="list-group-item list-group-item-action language-option" data-lang="zh_cn">Chinese Simplified</button>
+                        <button type="button" class="list-group-item list-group-item-action language-option" data-lang="zh_tw">Chinese Traditional</button>
+                        <button type="button" class="list-group-item list-group-item-action language-option" data-lang="ja">Japanese</button>
+                        <button type="button" class="list-group-item list-group-item-action language-option" data-lang="ko">Korean</button>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
    
     <script src="assets/js/script.js"></script>
 </body>

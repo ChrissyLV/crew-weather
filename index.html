@@ -9,8 +9,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/leaflet.css" />
 </head>
 <body>
-    <header class="bg-dark text-white p-3">
-        <div class="container d-flex justify-content-between align-items-center">
+    <header class="header-custom">
+        <div class="container-custom d-flex justify-content-between align-items-center">
             <h1 class="mb-0">Crew Weather</h1>
             <div>
                 <button id="languageButton" class="btn btn-secondary">Language</button>
@@ -20,6 +20,18 @@
             </div>
         </div>
     </header>
+    <div class="container mt-5">
+        <div class="card p-4 shadow-lg">
+            <div class="input-group mb-3">
+                <input type="text" id="city" class="form-control" placeholder="Enter city name">
+                <div class="input-group-append">
+                    <button id="getWeather" class="btn btn-primary">Get Weather</button>
+                </div>
+            </div>
+            <div id="map" class="map-container mb-3"></div>
+            <div id="weatherInfo" class="alert alert-info" style="display: none;"></div>
+        </div>
+    </div>
    
     <script src="assets/js/script.js"></script>
 </body>

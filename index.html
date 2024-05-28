@@ -11,7 +11,7 @@
 <body>
     <header class="header-custom">
         <div class="container-custom d-flex justify-content-between align-items-center">
-            <h1 class="mb-0">Crew Weather</h1>
+            <h1 class="team">Crew Weather</h1>
             <div>
                 <button id="languageButton" class="btn btn-secondary">Language</button>
                 <button id="settingsButton" class="btn btn-secondary ml-2">Settings</button>
@@ -114,6 +114,34 @@
             </div>
         </div>
     </div>
+                                                        <!-- Most Searched -->
+      <div class="modal fade" id="mostSearchedModal" tabindex="-1" aria-labelledby="mostSearchedModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content text-center">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="mostSearchedModalLabel">Most Searched Locations</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <ul class="list-group">
+                        <li class="list-group-item searched-location">New York</li>
+                        <li class="list-group-item searched-location">London</li>
+                        <li class="list-group-item searched-location">Tokyo</li>
+                        <li class="list-group-item searched-location">Paris</li>
+                        <li class="list-group-item searched-location">Sydney</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/leaflet.js"></script>
+    <script src="assets/js/script.js"></script>
 
    
     <script src="assets/js/script.js"></script>

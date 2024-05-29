@@ -37,3 +37,14 @@ document.addEventListener('DOMContentLoaded', () => {
         localStorage.setItem('windUnit', windUnit);
         $('#settingsModal').modal('hide');
     });
+
+    document.getElementById('getWeather').addEventListener('click', function() {
+        const city = document.getElementById('city').value;
+        const apiKey = 'c0091532d2936a2f6779048bf50526f0';
+        const url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=${unit}&lang=${language}`;
+
+        const weatherInfo = document.getElementById('weatherInfo');
+        weatherInfo.style.display = 'none';
+        weatherInfo.classList.remove('alert-success', 'alert-danger');
+        weatherInfo.classList.add('alert-info');
+        weatherInfo.textContent = 'Loading...';

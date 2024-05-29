@@ -93,3 +93,12 @@ document.addEventListener('DOMContentLoaded', () => {
                 weatherInfo.textContent = 'Error fetching weather data. Please try again later.';
             });
     });
+
+    const closeButton = document.querySelector('[data-dismiss="modal"]');
+const yesButton = document.getElementById('yesButton');
+const noButton = document.getElementById('noButton');
+
+function closeModal() {
+    const modals = document.querySelectorAll('.modal');
+    
+

@@ -177,4 +177,21 @@ document.addEventListener('DOMContentLoaded', () => {
                                 Humidity: ${data.main.humidity}%<br>
                                 Wind Speed: ${windSpeed} ${windUnitLabel}
                             `;
+                } else {
+                    weatherInfo.style.display = 'block';
+                    weatherInfo.classList.remove('alert-info', 'alert-success');
+                    weatherInfo.classList.add('alert-danger');
+                    weatherInfo.textContent = 'Location not found. Please try again.';
                 }
+            })
+            .catch(error => {
+                console.error('Error fetching weather data:', error);
+                weatherInfo.style.display = 'block';
+                weatherInfo.classList.remove('alert-info', 'alert-success');
+                weatherInfo.classList.add('alert-danger');
+                weatherInfo.textContent = 'Error fetching weather data. Please try again later.';
+            });
+    });
+});
+
+

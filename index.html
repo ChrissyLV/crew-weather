@@ -26,12 +26,14 @@
                 <input type="text" id="city" class="form-control" placeholder="Enter city name">
                 <div class="input-group-append">
                     <button id="getWeather" class="btn btn-primary">Get Weather</button>
+                    
                 </div>
             </div>
             <div id="map" class="map-container mb-3"></div>
             <div id="weatherInfo" class="alert alert-info" style="display: none;"></div>
         </div>
     </div>
+    
 
                                                      <!-- Settings Modal -->
     <div class="modal fade" id="settingsModal" tabindex="-1" aria-labelledby="settingsModalLabel" aria-hidden="true">
@@ -43,6 +45,7 @@
                         <span aria-hidden="true">&times;</span>
                     </button>
                 </div>
+                
                 <div class="modal-body">
                     <div class="form-group">
                         <label for="unitSelect">Temperature Unit</label>
@@ -90,7 +93,6 @@
                         <button type="button" class="list-group-item list-group-item-action language-option" data-lang="zh_tw">Chinese Traditional</button>
                         <button type="button" class="list-group-item list-group-item-action language-option" data-lang="ja">Japanese</button>
                         <button type="button" class="list-group-item list-group-item-action language-option" data-lang="ko">Korean</button>
-                        
                     </div>
                 </div>
                 <div class="modal-footer">
@@ -105,7 +107,7 @@
         <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content text-center">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="feedbackModalLabel">Feedback</h5>
+                    <h5 class="modal-title" id="mostSearchedModalLabel">Feedback</h5>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                     </button>
@@ -118,11 +120,13 @@
             </div>
         </div>
     </div>
+    
 
                                                                 <!-- Most Searched Modal -->
     <div class="modal fade" id="mostSearchedModal" tabindex="-1" aria-labelledby="mostSearchedModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content text-center">
+                <div class="modal-header">
                 <div class="modal-header">
                     <h5 class="modal-title" id="mostSearchedModalLabel">Most Searched Locations</h5>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
@@ -132,10 +136,10 @@
                 <div class="modal-body">
                     <ul class="list-group">
                         <li class="list-group-item searched-location">New York</li>
-                        <li class="list-group-item searched-location">London</li>
-                        <li class="list-group-item searched-location">Tokyo</li>
-                        <li class="list-group-item searched-location">Paris</li>
-                        <li class="list-group-item searched-location">Sydney</li>
+                        <li class="list-group-item searched-location">London</li> 
+                        <li class="list-group-item searched-location">Tokyo</li> 
+                        <li class="list-group-item searched-location">Paris</li> 
+                        <li class="list-group-item searched-location">Sydney</li> 
                     </ul>
                 </div>
             </div>

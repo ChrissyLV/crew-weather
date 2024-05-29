@@ -113,6 +113,16 @@ closeButton.addEventListener('click', () => {
     closeModal();
 });
 
+yesButton.addEventListener('click', () => {
+    console.log('User clicked Yes');
+    closeModal();
+});
+
+noButton.addEventListener('click', () => {
+    console.log('User clicked No');
+    closeModal();
+});
+
 
 
 

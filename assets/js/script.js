@@ -123,6 +123,11 @@ document.addEventListener('DOMContentLoaded', () => {
         closeModal();
     });
 
+                                        // Most Searched button functionality
+     document.getElementById('mostSearchedButton').addEventListener('click', () => {
+        $('#mostSearchedModal').modal('show');
+    });
+
                                     // Click event for most searched locations
     document.querySelectorAll('.searched-location').forEach(item => {
         item.addEventListener('click', (event) => {

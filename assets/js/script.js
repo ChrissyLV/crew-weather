@@ -24,4 +24,16 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    
+    document.getElementById('settingsButton').addEventListener('click', () => {
+        document.getElementById('unitSelect').value = unit;
+        document.getElementById('windUnitSelect').value = windUnit;
+        $('#settingsModal').modal('show');
+    });
+
+    document.getElementById('saveSettings').addEventListener('click', () => {
+        unit = document.getElementById('unitSelect').value;
+        windUnit = document.getElementById('windUnitSelect').value;
+        localStorage.setItem('unit', unit);
+        localStorage.setItem('windUnit', windUnit);
+        $('#settingsModal').modal('hide');
+    });

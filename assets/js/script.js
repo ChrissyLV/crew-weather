@@ -95,35 +95,43 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     const closeButton = document.querySelector('[data-dismiss="modal"]');
-const yesButton = document.getElementById('yesButton');
-const noButton = document.getElementById('noButton');
+    const yesButton = document.getElementById('yesButton');
+    const noButton = document.getElementById('noButton');
 
-function closeModal() {
-    const modals = document.querySelectorAll('.modal');
-    modals.forEach(modal => {
-        if (modal.classList.contains('show')) {
-            modal.classList.remove('show');
-            modal.setAttribute('aria-hidden', 'true');
-            modal.setAttribute('style', 'display: none');
-        }
+    function closeModal() {
+        const modals = document.querySelectorAll('.modal');
+        modals.forEach(modal => {
+            if (modal.classList.contains('show')) {
+                modal.classList.remove('show');
+                modal.setAttribute('aria-hidden', 'true');
+                modal.setAttribute('style', 'display: none');
+            }
+        });
+    }
+
+    closeButton.addEventListener('click', () => {
+        closeModal();
     });
-}
 
-closeButton.addEventListener('click', () => {
-    closeModal();
-});
+    yesButton.addEventListener('click', () => {
+        console.log('User clicked Yes');
+        closeModal();
+    });
 
-yesButton.addEventListener('click', () => {
-    console.log('User clicked Yes');
-    closeModal();
-});
+    noButton.addEventListener('click', () => {
+        console.log('User clicked No');
+        closeModal();
+    });
 
-noButton.addEventListener('click', () => {
-    console.log('User clicked No');
-    closeModal();
-});
-
-
+                                    // Click event for most searched locations
+    document.querySelectorAll('.searched-location').forEach(item => {
+        item.addEventListener('click', (event) => {
+            const city = event.target.textContent;
+            document.getElementById('city').value = city;
+            document.getElementById('getWeather').click();
+            $('#mostSearchedModal').modal('hide');
+        });
+    });
 
 
 

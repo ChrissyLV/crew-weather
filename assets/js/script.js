@@ -93,3 +93,37 @@ document.addEventListener('DOMContentLoaded', () => {
                 weatherInfo.textContent = 'Error fetching weather data. Please try again later.';
             });
     });
+
+    const closeButton = document.querySelector('[data-dismiss="modal"]');
+const yesButton = document.getElementById('yesButton');
+const noButton = document.getElementById('noButton');
+
+function closeModal() {
+    const modals = document.querySelectorAll('.modal');
+    modals.forEach(modal => {
+        if (modal.classList.contains('show')) {
+            modal.classList.remove('show');
+            modal.setAttribute('aria-hidden', 'true');
+            modal.setAttribute('style', 'display: none');
+        }
+    });
+}
+
+closeButton.addEventListener('click', () => {
+    closeModal();
+});
+
+yesButton.addEventListener('click', () => {
+    console.log('User clicked Yes');
+    closeModal();
+});
+
+noButton.addEventListener('click', () => {
+    console.log('User clicked No');
+    closeModal();
+});
+
+
+
+
+

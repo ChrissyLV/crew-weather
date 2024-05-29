@@ -100,5 +100,19 @@ const noButton = document.getElementById('noButton');
 
 function closeModal() {
     const modals = document.querySelectorAll('.modal');
-    
+    modals.forEach(modal => {
+        if (modal.classList.contains('show')) {
+            modal.classList.remove('show');
+            modal.setAttribute('aria-hidden', 'true');
+            modal.setAttribute('style', 'display: none');
+        }
+    });
+}
+
+closeButton.addEventListener('click', () => {
+    closeModal();
+});
+
+
+
 

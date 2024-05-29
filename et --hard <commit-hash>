@@ -1,0 +1,116 @@
+[33mcommit 74617592182285f4b6d7e1ae340a233a8078e8e6[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m)[m
+Author: Elmi Farah <elmifarah98@gmail.com>
+Date:   Wed May 29 09:40:01 2024 +0000
+
+    Created images folder
+
+[33mcommit 0e253c5d469d6b2386df7d6569193efb6275643b[m
+Merge: 638b5cd 06a923b
+Author: Elmifarah1 <165162053+Elmifarah1@users.noreply.github.com>
+Date:   Wed May 29 10:37:45 2024 +0100
+
+    Merge pull request #5 from ChrissyLV/Elmi-Branch
+    
+    Elmi branch
+
+[33mcommit 06a923b507b5fc3c59ce5244ad2d4eaee46ee73b[m[33m ([m[1;31morigin/Elmi-Branch[m[33m, [m[1;32mElmi-Branch[m[33m)[m
+Author: Elmi Farah <elmifarah98@gmail.com>
+Date:   Wed May 29 09:37:14 2024 +0000
+
+    Added lines of codes to the add functionality to the app
+
+[33mcommit b9c28aa551fcdedc64b5cd249190392e59180660[m
+Author: Elmi Farah <elmifarah98@gmail.com>
+Date:   Wed May 29 09:35:36 2024 +0000
+
+    Added the javascript into the code
+
+[33mcommit 638b5cdee8b15f2cf42433364631407493ff9ea5[m
+Author: ChrissyLV <156092907+ChrissyLV@users.noreply.github.com>
+Date:   Wed May 29 08:29:20 2024 +0100
+
+    Add a new user story template
+
+[33mcommit e669bda62673ce4a7d6009519bfeaf90958e507c[m
+Merge: 2cd1ccf a7cfe04
+Author: Walid Will Gailey White <165159869+willcodinggod@users.noreply.github.com>
+Date:   Wed May 29 01:49:11 2024 +0100
+
+    Merge pull request #2 from ChrissyLV/will-dev
+    
+    Will dev
+
+[33mcommit a7cfe04d443b93905d9bc0342aba7f4f510a82b0[m[33m ([m[1;31morigin/will-dev[m[33m)[m
+Author: willcodinggod white <walidwhite@live.co.uk>
+Date:   Wed May 29 00:48:31 2024 +0000
+
+    minor css modification
+
+[33mcommit b069ba772bfa6771301d9c005eee4d14300b525a[m
+Author: willcodinggod white <walidwhite@live.co.uk>
+Date:   Wed May 29 00:30:03 2024 +0000
+
+    fixed html structre
+
+[33mcommit 2cd1ccff2f074285a2a21a330cce5fa48c7ac411[m
+Merge: 6544cca d8faa70
+Author: Walid Will Gailey White <165159869+willcodinggod@users.noreply.github.com>
+Date:   Tue May 28 23:25:58 2024 +0100
+
+    Merge pull request #1 from ChrissyLV/will-dev
+    
+    Will dev
+
+[33mcommit d8faa70cee3d93b52539f1d2fffc446d559f48fc[m
+Author: willcodinggod white <walidwhite@live.co.uk>
+Date:   Tue May 28 22:23:20 2024 +0000
+
+    added inline css in html for better optics
+
+[33mcommit 5dbf4c1a4da779f15a093e6208432e6ac13b986e[m
+Author: willcodinggod white <walidwhite@live.co.uk>
+Date:   Tue May 28 22:17:10 2024 +0000
+
+    added media query
+
+[33mcommit f8db0a63aa7e583299ac2b87e36cdd082b3ff0ce[m
+Author: willcodinggod white <walidwhite@live.co.uk>
+Date:   Tue May 28 22:08:27 2024 +0000
+
+    added css
+
+[33mcommit d382b03c0912948f4ed6030ff4a53c3602c3eb59[m
+Author: willcodinggod white <walidwhite@live.co.uk>
+Date:   Tue May 28 21:13:15 2024 +0000
+
+    added most seached overlay and script links
+
+[33mcommit e6924586b91b4e64db5402733bc0dbf0e7946cd5[m
+Author: willcodinggod white <walidwhite@live.co.uk>
+Date:   Tue May 28 20:50:01 2024 +0000
+
+    added feedback overlay
+
+[33mcommit dbd2e27b1699465961c5f3f1b3166b86d1613d97[m
+Author: willcodinggod white <walidwhite@live.co.uk>
+Date:   Tue May 28 20:24:41 2024 +0000
+
+    added language overlay
+
+[33mcommit dbc34400efe41b9717ffad31e497a6826f1ced39[m
+Author: willcodinggod white <walidwhite@live.co.uk>
+Date:   Tue May 28 20:02:48 2024 +0000
+
+    added setting overlay interface
+
+[33mcommit ae377cd5679349f8796c75f5e96fa4fedfa11a89[m
+Author: willcodinggod white <walidwhite@live.co.uk>
+Date:   Tue May 28 19:38:30 2024 +0000
+
+    addd seach bar and button
+
+[33mcommit c92057afc3fa8fdb2e0e9ef525ff552f634bf996[m
+Author: willcodinggod white <walidwhite@live.co.uk>
+Date:   Tue May 28 19:12:07 2024 +0000
+
+     added header with title and buttons for, feedback, languages, settings , most serched

@@ -33,7 +33,7 @@ The CREW Weather App is designed to provide an intuitive and comprehensive break
 - **Save Changes**: Button to save the customized settings.
 
 ### 4. Feedback
-![Feedback](img)
+![Feedback](assets/images/CREWfeedback.PNG)
 - **User Experience**: Prompt asking if the user enjoyed using the app.
 - **Response Options**: Simple Yes or No buttons for user feedback.
 - **Naughty NO button**: The No button seems to be misbehaving

@@ -1,6 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
     const map = L.map('map').setView([20, 0], 2);
-    // Add OpenStreetMap tiles
     L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
         attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
     }).addTo(map);
@@ -9,18 +8,15 @@ document.addEventListener('DOMContentLoaded', () => {
     let windUnit = localStorage.getItem('windUnit') || 'metric';
     let language = localStorage.getItem('language') || 'en';
 
-                                     // Event Listener for enter key to retrieve city
     document.getElementById('city').addEventListener('keydown', function (event) {
         if (event.key === 'Enter') {
             document.getElementById('getWeather').click();
         }
     });
 
-    // Open language modal on button click
     document.getElementById('languageButton').addEventListener('click', () => {
         $('#languageModal').modal('show');
     });
-    // Save language selection
     document.querySelectorAll('#languageModal .language-option').forEach(item => {
         item.addEventListener('click', (event) => {
             language = event.target.getAttribute('data-lang');
@@ -89,7 +85,6 @@ document.addEventListener('DOMContentLoaded', () => {
                     weatherInfo.textContent = 'City not found. Please try again.';
                 }
             })
-
             .catch(error => {
                 console.error('Error fetching weather data:', error);
                 weatherInfo.style.display = 'block';
@@ -99,33 +94,38 @@ document.addEventListener('DOMContentLoaded', () => {
             });
     });
 
-    // Feedback button functionality
-
     document.getElementById('feedbackButton').addEventListener('click', () => {
         $('#feedbackModal').modal('show');
     });
 
-    // Yes button functionality
     document.getElementById('yesButton').addEventListener('click', () => {
         $('#feedbackModal').modal('hide');
     });
 
-    // No button hover effect
     const noButton = document.getElementById('noButton');
-    noButton.addEventListener('mouseover', () => {
-        noButton.classList.add('move');
-    });
 
-    noButton.addEventListener('mouseout', () => {
-        noButton.classList.remove('move');
-    });
+    function moveButtonRandomly() {
+        const modalContent = noButton.closest('.modal-content');
+        const modalRect = modalContent.getBoundingClientRect();
+        const buttonRect = noButton.getBoundingClientRect();
 
-    // Most Searched button functionality
+        // Calculate new random positions
+        const maxTop = modalRect.height - buttonRect.height;
+        const maxLeft = modalRect.width - buttonRect.width;
+        const newTop = Math.random() * maxTop;
+        const newLeft = Math.random() * maxLeft;
+
+        noButton.style.top = `${newTop}px`;
+        noButton.style.left = `${newLeft}px`;
+    }
+
+    noButton.addEventListener('mouseover', moveButtonRandomly);
+    noButton.addEventListener('mouseout', moveButtonRandomly);
+
     document.getElementById('mostSearchedButton').addEventListener('click', () => {
         $('#mostSearchedModal').modal('show');
     });
 
-    // Click event for most searched locations
     document.querySelectorAll('.searched-location').forEach(item => {
         item.addEventListener('click', (event) => {
             const city = event.target.textContent;
@@ -135,7 +135,6 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    // Fetch weather on map click
     map.on('click', function (e) {
         const { lat, lng } = e.latlng;
         const apiKey = 'c0091532d2936a2f6779048bf50526f0';

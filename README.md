@@ -48,7 +48,7 @@ The CREW Weather App is designed to provide an intuitive and comprehensive break
   - Sydney
 - **Quick Access**: Tap on any of the most searched locations to view the weather details immediately.
 
-### 6. Mobile Landing Page Design
+### 6. Mobile Home Page Design
 ![Mobile home Page](assets/images/CREWmobilemainpage.PNG)
 - **Fully responsive**: Current time displayed at the top.
 

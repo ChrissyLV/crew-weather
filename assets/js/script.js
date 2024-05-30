@@ -8,6 +8,14 @@ document.addEventListener('DOMContentLoaded', () => {
     let unit = localStorage.getItem('unit') || 'metric';
     let windUnit = localStorage.getItem('windUnit') || 'metric';
     let language = localStorage.getItem('language') || 'en';
+
+                                     // Event Listener for enter key to retrieve city
+    document.getElementById('city').addEventListener('keydown', function (event) {
+        if (event.key === 'Enter') {
+            document.getElementById('getWeather').click();
+        }
+    });
+
     // Open language modal on button click
     document.getElementById('languageButton').addEventListener('click', () => {
         $('#languageModal').modal('show');
@@ -91,18 +99,18 @@ document.addEventListener('DOMContentLoaded', () => {
             });
     });
 
-                                                                        // Feedback button functionality
+    // Feedback button functionality
 
     document.getElementById('feedbackButton').addEventListener('click', () => {
         $('#feedbackModal').modal('show');
     });
 
-                                                                        // Yes button functionality
+    // Yes button functionality
     document.getElementById('yesButton').addEventListener('click', () => {
         $('#feedbackModal').modal('hide');
     });
 
-                                                                        // No button hover effect
+    // No button hover effect
     const noButton = document.getElementById('noButton');
     noButton.addEventListener('mouseover', () => {
         noButton.classList.add('move');
@@ -112,12 +120,12 @@ document.addEventListener('DOMContentLoaded', () => {
         noButton.classList.remove('move');
     });
 
-                                                           // Most Searched button functionality
+    // Most Searched button functionality
     document.getElementById('mostSearchedButton').addEventListener('click', () => {
         $('#mostSearchedModal').modal('show');
     });
 
-                                                        // Click event for most searched locations
+    // Click event for most searched locations
     document.querySelectorAll('.searched-location').forEach(item => {
         item.addEventListener('click', (event) => {
             const city = event.target.textContent;
@@ -127,8 +135,8 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-                                                             // Fetch weather on map click
-    map.on('click', function(e) {
+    // Fetch weather on map click
+    map.on('click', function (e) {
         const { lat, lng } = e.latlng;
         const apiKey = 'c0091532d2936a2f6779048bf50526f0';
         const url = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lng}&appid=${apiKey}&units=${unit}&lang=${language}`;

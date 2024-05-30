@@ -1,6 +1,6 @@
 # Crew Weather App
 
-The CREW Weather App is designed to provide an intuitive and comprehensive breakdown of weather in requested locations. Below are the descriptions of the main features and functionalities illustrated in the provided images.
+The CREW Weather App is designed to provide an intuitive and comprehensive breakdown of the weather in any user-requested location. Below are the descriptions of the main features and functionalities illustrated in the provided images.
 
 ## Features
 
@@ -36,9 +36,10 @@ The CREW Weather App is designed to provide an intuitive and comprehensive break
 ![Feedback](img)
 - **User Experience**: Prompt asking if the user enjoyed using the app.
 - **Response Options**: Simple Yes or No buttons for user feedback.
+- **Naughty NO button**: The No button seems to be misbehaving
 
 ### 5. Most Searched Locations
-![Most Searched Locations](img)
+![Most Searched Locations](assets/images/CREWlocations.PNG)
 - **Popular Locations**:
   - New York
   - London
@@ -81,5 +82,17 @@ The CREW Weather App is designed to provide an intuitive and comprehensive break
 ![Monile view 1](assets/images/CREWweathermobile1.PNG)
 ![Mobile view 2](assets/images/CREWweathermobile2.PNG)
 
-This README provides an overview of the CREW Weather App's features and a guide on how to use them, ensuring users can fully utilize the app’s functionalities.
+### Validators:
+
+- **W3C CSS Validator**
+![W3C CSS](assets/images/w3ccssvalidator.png)
+- **NU HTML Checker**
+![W3C CSS](assets/images/nuhtmlchecker.png)
+
+### Resources:
+- **API**: https://openweathermap.org/
+- **Map**: openstreetmap.org
+- **Javascript Library**: https://leafletjs.com/
+- 
+
 This was a collaborative project for our 2nd hackathon project with the Code-institute bootcamp 2024
